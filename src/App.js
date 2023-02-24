@@ -1,10 +1,14 @@
+import { Container } from "react-bootstrap";
+import Header from "./components/Header";
+import CardContainer from "./components/CardContainer";
 
 
 function App() {
   return (
-    <div >
-
-    </div>
+  <Container>
+    <Header/>
+    <CardContainer/>
+  </Container>
   );
 }
 
