@@ -5,6 +5,8 @@ import PlayerCard from "./PlayerCard";
 
 const CardContainer = () => {
     const [search, setSearch] = useState("");
+
+    console.log(data.filter((player) => player.name.toLowerCase().includes(search.trim())))
     return (
         <>
             <Form.Control
@@ -15,7 +17,7 @@ const CardContainer = () => {
             />
             <Container className="card-container rounded-4 my-4 p-3">
                 <Row className="g-3 justify-content-center">
-                    {data.filter((player) => player.name.toLowerCase().includes(search))
+                    {data.filter((player) => player.name.toLowerCase().includes(search)) //! filter map array oluşturur
                     .map((item, index) => {
                         // const {name, img, statistics} = item
                     return (
